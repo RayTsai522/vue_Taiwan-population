@@ -1,0 +1,49 @@
+body{
+    background-color: #222;
+    font-family: Arial;
+    list-style-type: none;
+}
+#app{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+#information{
+    width: 30vw;
+}
+#app svg{
+    height: 100vh;
+}
+path{
+    stroke: white;
+    fill: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+path:hover{
+    fill: #B99362;
+    transform: translate(-2px, -2px);
+}
+#chart-area{
+    display: flex;
+}
+#area-name{
+    display: flex;
+    flex-direction: column;
+}
+#area-name div{
+    width: 80px;
+    margin-top: 1px;
+    height: 22px;
+}
+.cahart-class{
+    height: 22px;
+    background-color: teal;
+    margin-top : 1px;
+    transition: 0.8s;
+    transition-timing-function: ease-in;
+}
+/* .selected{
+    fill: #B99362;
+    transform: translate(-10px, -10px);
+} */

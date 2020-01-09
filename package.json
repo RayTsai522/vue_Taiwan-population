@@ -1,0 +1,13 @@
+{
+    "name": "library_api",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "json": "json-server --watch db.json --port 8888"
+    },
+    "author": "raytsai",
+    "license": "ISC",
+    "dependencies": {
+      "json-server": "^0.15.0"
+    }
+  }
