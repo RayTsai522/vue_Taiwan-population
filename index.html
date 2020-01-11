@@ -14,12 +14,14 @@
 <body>
     <div id="app">
         <div id="information">
-            <h2>台灣各區域人口</h2>
+            <h1>台灣各區域人口</h1>
+            <h2>{{ selectCity }}</h2>
             <div id="chart-area">
                 <div id="area-name">
                     <div v-for="(site ,i) in sites">{{ site.site_id.substr(3) }}</div>
                 </div>
                 <div id="chart"></div>
+                
             </div>
 
             <!-- <h4 >{{ selectCity }}</h4>

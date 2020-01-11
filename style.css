@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: row;
     color: white;
+    justify-content: space-between;
 }
 #information{
     width: 30vw;
@@ -42,6 +43,15 @@ path:hover{
     margin-top : 1px;
     transition: 0.8s;
     transition-timing-function: ease-in;
+}
+#information h2{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 180px;
+    margin: 0 85px 5px 0;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.1);
 }
 /* .selected{
     fill: #B99362;

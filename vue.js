@@ -106,7 +106,7 @@ let app = new Vue({
                 return city.tag == nowSelect
             })
             this.selectCity = cities[0].place
-            console.log(cities[0].place)
+            // console.log(cities[0].place)
             this.filterPlace()
             this.makeChart()
         },
@@ -114,7 +114,9 @@ let app = new Vue({
             this.sites = this.rawData.filter((site) => {
                 return site.site_id.indexOf(this.selectCity) == 0
             })
-
+            this.sites = this.sites.sort((a, b)=>{
+                return b.people_total - a.people_total
+            })
         },
         makeChart() {
             let chart = d3.select('#chart').selectAll('li')
@@ -159,9 +161,9 @@ let app = new Vue({
         });
         axios.get(this.dataUrl)
             .then((res) => {
-                console.log(res)
+                // console.log(res)
                 this.rawData = res.data
-                console.log('rawData', this.rawData)
+                // console.log('rawData', this.rawData)
             })
             .catch((err) => {
                 console.log(err)
